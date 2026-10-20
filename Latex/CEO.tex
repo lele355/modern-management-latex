@@ -1,0 +1,252 @@
+\documentclass{cumcmthesis}
+
+% ==========================================
+% 个性化宏包与设置 (模板未包含的部分)
+% ==========================================
+
+% [页眉页脚] 保持商业报告的专业感
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textbf{现代管理学课程设计}}
+\rhead{\textit{西安同城连锁战略规划书}}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+
+% [文本框] 用于 SWOT 和 路线图 (模板本身不含此包，需保留)
+\usepackage{tcolorbox}
+
+% [颜色定义] CEO报告的专属配色
+\definecolor{primary}{RGB}{0, 51, 102}   % 商务蓝
+\definecolor{secondary}{RGB}{139, 0, 0} % 强调红
+\definecolor{bglight}{RGB}{245, 245, 245} % 浅灰背景
+
+% ==========================================
+% 文档信息
+% ==========================================
+\title{【拟定品牌名称】连锁酒店战略规划书}
+\author{首席执行官 (CEO) 汇报}
+\date{\today}
+
+% ==========================================
+% 正文区域
+% ==========================================
+\begin{document}
+
+% --- 封面 (保留自定义封面以维持商业感) ---
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    
+    {\Huge \bfseries \color{primary} 【拟定品牌名称】酒店管理集团 \par}
+    \vspace{0.5cm}
+    {\Large \bfseries ——西安同城连锁网络布局与三年战略规划 \par}
+    
+    \vspace{2cm}
+    
+    {\large \textbf{角色担当：首席执行官 (CEO)} \par}
+    {\small \textit{核心视角：SWOT (态势分析) 战略推演 $\cdot$ AHP (层次分析法) 量化决策 $\cdot$ 数字化与供应链整合} \par}
+    
+    \vspace{4cm}
+    
+    \begin{tabular}{l l}
+        \textbf{课程名称：} & 现代管理学 \\
+        \textbf{项目小组：} & [填写组名] \\
+        \textbf{聚焦区域：} & 陕西省 $\cdot$ 西安市（同城深耕） \\
+        \textbf{提交日期：} & \today \\
+    \end{tabular}
+    
+    \vfill
+\end{titlepage}
+
+
+\newpage
+\tableofcontents
+\newpage
+
+% --- 第一部分 ---
+\section{战略环境扫描与 SWOT 推演}
+
+在制定具体目标前，我运用 SWOT模型对企业所处的西安市场环境进行了深度扫描。
+
+\begin{table}[H]
+    \centering
+    \caption{战略环境分析矩阵 (SWOT Matrix)}
+    % 使用模板自带的 tabular 环境
+    \begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
+        \hline
+        \multicolumn{1}{|c|}{\textbf{Strengths (优势)}} & \multicolumn{1}{c|}{\textbf{Weaknesses (劣势)}} \\
+        \hline
+        1. \textbf{决策灵活}：扁平化管理，对市场反应速度快于大型集团。 \newline
+        2. \textbf{本地化深耕}：团队熟悉西安地缘文化，具备本地供应链资源（如肉夹馍/特色早餐直供）。 \newline
+        3. \textbf{IE (工业工程) 基因}：利用工业工程方法优化人效，运营成本更低。 & 
+        1. \textbf{品牌势能弱}：初创品牌缺乏会员积累和知名度。 \newline
+        2. \textbf{融资渠道窄}：初期高度依赖自有资金，抗风险资金池较小。 \newline
+        3. \textbf{单店获客成本高}：缺乏集团 CRS (中央预订系统) 支持，初期依赖 OTA (在线旅行社)。 \\
+        \hline
+        \multicolumn{1}{|c|}{\textbf{Opportunities (机会)}} & \multicolumn{1}{c|}{\textbf{Threats (威胁)}} \\
+        \hline
+        1. \textbf{文旅复苏}：西安作为网红城市，2024年游客量持续井喷。 \newline
+        2. \textbf{消费分级}：商旅客户从“唯星级论”转向追求“性价比与个性化”，利好中端精品酒店。 \newline
+        3. \textbf{高新扩容}：西安高新区三期建设带来了大量新增商务客源。 & 
+        1. \textbf{巨头下沉}：亚朵、全季在西安疯狂拓店，挤压生存空间。 \newline
+        2. \textbf{民宿内卷}：大量网红民宿以低价分流休闲客群。 \newline
+        3. \textbf{物业租金上涨}：核心商圈租金年均涨幅超过5\%。 \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\textbf{CEO战略推演结论：} 
+采取 \textbf{WO (Weaknesses-Opportunities, 扭转性) 战略} —— 利用外部机会（高新商务需求）弥补内部劣势（品牌弱）。\textbf{避开}全季/亚朵密集的传统商圈，\textbf{切入}高新商务细分市场，先活下来，再图发展。
+
+% --- 第二部分 ---
+\section{战略蓝图：深耕西安，网格化布局}
+
+\subsection{同城连锁模型}
+作为CEO，我制定了“1旗舰 + 2翼 + N触点”的同城连锁网络：
+\begin{itemize}
+    \item \textbf{“2”个商务双翼（首发阵地）：} 
+        \begin{itemize}
+            \item \textbf{高新店（锦业路）：} 锁定世界500强商旅客户，主打“极致效率”。
+            \item \textbf{经开店（行政中心）：} 锁定政务接待与高铁客流。
+        \end{itemize}
+    \item \textbf{“1”个文化旗舰（品牌高地）：} 
+        \begin{itemize}
+            \item \textbf{曲江店（大雁塔）：} 依托大唐不夜城，打造“博物馆式酒店”，承担品牌溢价功能。
+        \end{itemize}
+    \item \textbf{“N”个流量触点（渗透）：} 在钟楼/小寨等传统商圈开设轻量级门店。
+\end{itemize}
+
+% --- 第三部分 ---
+\section{商圈选址量化决策 (IE \& AHP)}
+
+在资金有限的情况下，\textbf{“首战即决战”}。我们运用 AHP (层次分析法) 方法科学确定首店选址。
+
+\subsection{AHP 决策过程详解}
+
+\subsubsection{1. 构造判断矩阵 (Judgment Matrix)}
+基于“利润优先”原则，明确指标权重逻辑：
+\begin{itemize}
+    \item \textbf{消费力 (B)} 是核心，因为中端酒店必须有溢价能力。
+    \item \textbf{客流量 (A)} 是基础，但不如消费力重要（避免“旺丁不旺财”）。
+\end{itemize}
+
+\begin{table}[H]
+    \centering
+    \caption{商圈评价指标判断矩阵（标准化顺序）}
+    \begin{tabular}{l | c c c c}
+        \toprule
+        \textbf{指标} & \textbf{A:客流量} & \textbf{B:消费力} & \textbf{C:租金优势} & \textbf{D:竞争蓝海} \\
+        \midrule
+        \textbf{A:客流量}   & 1 & 1/2 & 3 & 3 \\
+        \textbf{B:消费力}   & 2 & 1 & 4 & 5 \\
+        \textbf{C:租金优势} & 1/3 & 1/4 & 1 & 2 \\
+        \textbf{D:竞争蓝海} & 1/3 & 1/5 & 1/2 & 1 \\
+        \bottomrule
+    \end{tabular}
+    \\[5pt]
+    \footnotesize{\textit{注：矩阵通过一致性检验 ($CR=0.02 < 0.1$)，逻辑有效。}}
+\end{table}
+
+\subsubsection{2. 权重计算与综合评分}
+计算得出权重：$W=[0.27, 0.48, 0.14, 0.11]$。对西安核心商圈打分：
+
+\begin{table}[H]
+    \centering
+    \caption{西安核心商圈投资潜力评估矩阵}
+    \begin{tabular}{l c c c c c}
+        \toprule
+        \textbf{指标} & \textbf{权重} & \textbf{曲江(文旅)} & \textbf{高新(商务)} & \textbf{钟楼(传统)} & \textbf{计算逻辑} \\
+        \midrule
+        客流量 & 0.27 & 9.5 & 7.0 & 9.0 & $0.27 \times \text{得分}$ \\
+        消费力 & 0.48 & 8.5 & \textbf{9.5} & 6.0 & $0.48 \times \text{得分}$ \\
+        租金优势 & 0.14 & 4.0 & 6.0 & 3.0 & $0.14 \times \text{得分}$ \\
+        竞争蓝海 & 0.11 & 3.0 & 7.0 & 2.0 & $0.11 \times \text{得分}$ \\
+        \midrule
+        \textbf{总分} & \textbf{1.00} & \textbf{7.54} & \textbf{8.06} & \textbf{5.95} & \textbf{高新胜出} \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\textbf{结论：} 依据量化结果，首店落地\textbf{高新区}。这里虽然流量不如曲江，但极高的消费力和相对合理的租金能确保最快回本。
+
+% --- 第四部分 ---
+\section{三年实施路线图 (Implementation Roadmap)}
+
+\begin{tcolorbox}[colback=bglight, colframe=primary, title=\textbf{第一年：生存与验证 (Phase 1)}]
+    \begin{itemize}
+        \item \textbf{Q1-Q2}：完成高新首店选址、装修。引入智能化自助入住系统。
+        \item \textbf{Q3-Q4}：高新店爬坡运营，目标6个月内 OCC (客房入住率) 达到85\%。建立单店 SOP (标准作业程序) 手册。
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=bglight, colframe=primary, title=\textbf{第二年：复制与品牌 (Phase 2)}]
+    \begin{itemize}
+        \item \textbf{H1}：启动曲江旗舰店建设。与本地博物馆合作，植入文化IP。
+        \item \textbf{H2}：打通两店会员体系，上线自有酒店管理系统，降低 OTA (在线旅行社) 依赖比例至40\%以下。
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=bglight, colframe=primary, title=\textbf{第三年：规模与生态 (Phase 3)}]
+    \begin{itemize}
+        \item \textbf{全年}：在经开、钟楼布局标准店。建立西安同城中央供应链中心（洗涤/餐饮），实现规模经济。
+    \end{itemize}
+\end{tcolorbox}
+
+% --- 第五部分 ---
+\section{集团化管控与数字化战略}
+
+\subsection{同城供应链整合 (Synergy)}
+\begin{itemize}
+    \item \textbf{中央厨房模式}：与本地老字号（如魏家等）建立战略合作，由中央厨房统一配送半成品至各门店，只需复热即可上桌，节省单店厨师成本。
+    \item \textbf{灵活用工池}：高新店（周中忙）与曲江店（周末忙）员工实行潮汐式调配，综合人效提升15\%。
+\end{itemize}
+
+\subsection{数字化运营 (Digital Strategy)}
+\begin{itemize}
+    \item \textbf{私域流量池}：通过“入住送早餐”引导客户注册登录在线网站系统，利用管理系统进行精细化运营（如生日券、复购优惠）。
+    \item \textbf{智能决策看板}：CEO直接通过手机网站查看实时 RevPAR (每间可供租出客房收入)、出租率及客诉预警，告别报表滞后。
+\end{itemize}
+
+% --- 第六部分 ---
+\section{财务规划与单店模型}
+
+\subsection{单店营收模型 (Unit Economics)}
+\begin{table}[H]
+    \centering
+    \caption{首店（高新商务店）财务预测模型}
+    \begin{tabular}{l c l}
+        \toprule
+        \textbf{关键指标} & \textbf{预测值} & \textbf{假设逻辑} \\
+        \midrule
+        客房数量 & 120 间 & 标准中型体量 \\
+        平均房价 (ADR) & 460 元 & 参考周边亚朵/全季均价 \\
+        平均入住率 (OCC) & 85\% & 高新商务客群稳定 \\
+        \textbf{年总营收} & \textbf{1712 万元} & $120 \times 460 \times 85\% \times 365$ \\
+        净利润率 & 25\% & 剔除租金/人工后的 EBITDA (息税折旧摊销前利润) 率 \\
+        \textbf{年净现金流} & \textbf{428 万元} & 用于二店扩张资金储备 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsection{投资回报分析}
+首店预计总投资 1200 万元。
+\[
+\text{静态回收期} = \frac{\text{1200万}}{\text{428万}} \approx \textbf{2.8 年}
+\]
+这一数据优于行业平均的3.5年，验证了“高消费力+高周转”策略的有效性。
+
+% --- 第七部分 ---
+\section{ESG (环境、社会与治理) 与可持续发展 (ESG Strategy)}
+
+作为有责任感的CEO，我们将 ESG 理念融入运营：
+\begin{itemize}
+    \item \textbf{Environment (环境)}：全面取消客房“六小件”，推行可降解耗材；利用小程序控制客房能耗。
+    \item \textbf{Social (社会)}：招聘西安本地下岗职工从事保洁/安保工作，承担社区责任。
+    \item \textbf{Governance (治理)}：建立透明的供应商采购制度，杜绝回扣腐败。
+\end{itemize}
+
+\section{结语}
+立足高新，辐射全城。本方案通过SWOT分析明确战略方向，通过AHP工具锁定最优战场，通过数字化手段提升管理效率。我们不仅是在开酒店，更是在构建一个高效、智能、有温度的城市服务网络。
+
+\end{document}
